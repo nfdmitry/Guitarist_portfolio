@@ -1,1 +1,1 @@
-# Guitarist_portfolio
+# Реализация макета Guitarist-portfolio

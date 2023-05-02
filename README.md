@@ -1,1 +1,1 @@
-# Реализация макета Guitarist-portfolio
+# Landing page «Guitarist-portfolio»

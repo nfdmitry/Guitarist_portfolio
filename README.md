@@ -2,5 +2,5 @@
 
 Adaptive and mobile layout
 
-## [Demo](https://nfdmitry.github.io/The-Ballons/)
+## [Demo](https://nfdmitry.github.io/Guitarist-portfolio/)
 

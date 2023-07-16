@@ -1,0 +1,65 @@
+.mobile-menu 
+    width: 30px
+    height: 30px
+    position: relative
+    transition-duration: 1s
+    cursor: pointer
+    display: flex
+    align-items: center
+    display: none
+    @include respond(tablet-landscape)
+        display: none
+    @include respond(tablet-portrait)
+        display: none
+    @include respond(mobile-landscape)
+        display: flex  
+    @include respond(mobile-portrait)
+        display: flex
+    span
+        height: 4px
+        width: 30px
+        background-color: $color-black
+        border-radius: 20px
+        position: absolute
+        transition-duration: .25s
+        transition-delay: .25s
+        &::before
+            left: 0
+            position: absolute
+            top: -9px
+            height: 4px
+            width: 30px
+            background-color: $color-black
+            content: ""
+            border-radius: 20px
+            transition-duration: .25s
+            transition: transform .25s, top .25s .25s
+        &::after 
+            left: 0
+            position: absolute
+            top: 9px
+            height: 4px
+            width: 30px
+            background-color: $color-black
+            content: ""
+            border-radius: 20px
+            transition-duration: .25s
+            transition: transform .25s, top .25s .25s
+
+.mobile-menu.active span
+    transition-duration: 0.1s
+    transition-delay: .25s
+    background: transparent
+
+.mobile-menu.active span::before
+    transition: top .25s, transform .25s .25s
+    top: 0px
+    transform: rotateZ(-45deg)
+
+.mobile-menu.active span::after
+    transition: top 0.4s, transform .25s .25s
+    top: 0px
+    transform: rotateZ(45deg)
+
+
+

@@ -1,0 +1,195 @@
+.product-card-block
+    display: flex
+    justify-content: space-between
+    margin-bottom: 47px
+    @include respond(mobile-portrait)
+        display: flex
+        flex-direction: column
+        align-items: center
+    
+.product-card-elektro
+    display: flex
+    width: 30%
+    min-height: 360px
+    border-radius: 10px
+    background-color: $color-grey
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+    @include respond(tablet-portrait)
+        min-height: 236px
+    @include respond(mobile-portrait)
+        margin-bottom: 38px
+        width: 255px
+    &__block-picture
+        width: 50%
+        display: flex
+        align-items: flex-end
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+        @include respond(tablet-landscape)
+            width: 60%
+        @include respond(mobile-landscape)
+            width: 70%
+        @include respond(mobile-portrait)
+            width: 51%
+    &__picture-file
+        background: url(../img/section-presentation/guitar1.svg) center/cover no-repeat
+        height: 93%
+        width: 100%
+        filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 1.25))
+        animation: pulse 3s linear infinite
+        animation-fill-mode: backwards
+        @include respond(tablet-landscape)
+            height: 85%
+        @include respond(mobile-landscape)
+            height: 78%
+            position: relative
+            left: -13px
+        @include respond(mobile-portrait)
+            height: 88%
+            position: relative
+            margin-left: 26px
+    &__block-title
+        width: 50%
+        writing-mode: vertical-rl
+        display: flex
+        align-items: center
+        justify-content: center
+        font-weight: 600
+        font-size: 36px
+        line-height: 37px
+        text-align: center
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+        @include respond(tablet-landscape)
+            width: 40%
+        @include respond(tablet-portrait)
+            font-size: 25px
+            line-height: 28px
+        @include respond(mobile-landscape)
+            width: 30%
+            font-size: 22px
+            line-height: 17px
+        @include respond(mobile-portrait)
+
+.product-card-acoustic
+    display: flex
+    width: 30%
+    min-height: 360px
+    border-radius: 10px
+    background-color: $color-orange
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+    @include respond(tablet-portrait)
+        min-height: 236px
+    @include respond(mobile-portrait)
+        margin-bottom: 38px
+        width: 255px
+    &__block-picture
+        width: 50% 
+        display: flex
+        align-items: flex-end
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+        @include respond(tablet-landscape)
+            width: 60%
+        @include respond(mobile-landscape)
+            width: 70%
+        @include respond(mobile-portrait)
+            width: 51%
+    &__picture-file
+        background: url(../img/section-presentation/guitar2.svg) center/cover no-repeat
+        height: 93%
+        width: 100%
+        filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 1.25))
+        animation: pulse 3s linear infinite
+        animation-fill-mode: backwards
+        @include respond(tablet-landscape)
+            height: 85%
+        @include respond(mobile-landscape)
+            height: 75%
+            position: relative
+            left: -11px
+        @include respond(mobile-portrait)
+            height: 88%
+            position: relative
+            margin-left: 26px
+    &__block-title
+        width: 50%
+        writing-mode: vertical-rl
+        display: flex
+        align-items: center
+        justify-content: center
+        font-weight: 600
+        font-size: 36px
+        line-height: 37px
+        text-align: center
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+        @include respond(tablet-landscape)
+            width: 40%
+        @include respond(tablet-portrait)
+            font-size: 25px
+            line-height: 28px
+        @include respond(mobile-landscape)
+            width: 30%
+            font-size: 22px
+            line-height: 17px
+
+.product-card-ukulele
+    display: flex
+    width: 30%
+    min-height: 360px
+    border-radius: 10px
+    background-color: $color-blue
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+    @include respond(tablet-portrait)
+        min-height: 236px
+    @include respond(mobile-portrait)
+        width: 255px
+    &__block-picture
+        width: 50%
+        display: flex
+        align-items: flex-end
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+        @include respond(tablet-landscape)
+            width: 60%
+        @include respond(mobile-landscape)
+            width: 70%
+        @include respond(mobile-portrait)
+            width: 51%
+    &__picture-file
+        background: url(../img/section-presentation/guitar3.svg) center/cover no-repeat
+        height: 93%
+        width: 100%
+        filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 1.25))
+        animation: pulse 3s linear infinite
+        animation-fill-mode: backwards
+        @include respond(tablet-landscape)
+            height: 85%
+        @include respond(mobile-landscape)
+            height: 76%
+            position: relative
+            left: -3px
+        @include respond(mobile-portrait)
+            height: 88%
+            position: relative
+            margin-left: 26px
+    &__block-title
+        width: 50%
+        writing-mode: vertical-rl
+        display: flex
+        align-items: center
+        justify-content: center
+        font-weight: 600
+        font-size: 36px
+        line-height: 37px
+        text-align: center
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+        @include respond(tablet-landscape)
+            width: 40%
+        @include respond(tablet-portrait)
+            font-size: 25px
+            line-height: 28px
+        @include respond(mobile-landscape)
+            width: 30%
+            font-size: 22px
+            line-height: 17px
+
+
+
+

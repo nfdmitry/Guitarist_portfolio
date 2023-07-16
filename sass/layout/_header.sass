@@ -1,0 +1,116 @@
+.header
+    background-color: $color-background-grey
+
+.header__block
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 25px 0px 0px 0px
+
+.logo-header
+    max-width: 134px
+    animation: pulse 3s linear infinite
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+    @include respond(tablet-landscape)
+
+    @include respond(tablet-portrait)
+
+    @include respond(mobile-landscape)
+        max-width: 113px
+    @include respond(mobile-portrait)
+        max-width: 105px
+
+@keyframes pulse
+  0% 
+    scale: 1
+    transition: 1s all
+  10%
+    scale: 1.02
+    transition: 1s all
+  20%
+    scale: 1.04
+    transition: 1s all
+  30%
+    scale: 1.06
+    transition: 1s all
+  40%
+    scale: 1.08
+    transition: 1s all
+  50%
+    scale: 1.1
+    transition: 1s all
+  60%
+    scale: 1.08
+    transition: 1s all
+  70% 
+    scale: 1.06
+    transition: 1s all
+  80%
+    scale: 1.04
+    transition: 1s all
+  90%
+    scale: 1.02
+    transition: 1s all
+  100% 
+      scale: 1
+      transition: 1s all
+
+.nav
+  @include respond(mobile-landscape)
+    display: none
+  @include respond(mobile-portrait)
+    display: none
+
+.nav-list
+    display: flex
+    @include respond(mobile-landscape)
+        flex-direction: column
+    @include respond(mobile-portrait)
+        flex-direction: column
+    &__link
+        margin: 0px 64px 0px 0px
+        transition: .2s all
+        @include respond(mobile-landscape)
+            margin: 0px 0px 25px 0px
+            font-size: 27px
+        @include respond(mobile-portrait)
+            margin: 0px 0px 25px 0px
+            font-size: 27px
+        &:hover
+            scale: 0.97
+        &:last-child
+            margin-right: 0px
+        &:active
+            scale: 1 
+    &__link-item
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+        color: $color-black
+        font-weight: 600
+        &:hover 
+            color: $color-orange
+            
+.navMobile
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding: 30px 0px 0px 0px
+    display: none
+    &__link
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+        font-size: 39px
+        margin-bottom: 30px
+        font-weight: 600
+        line-height: 41px
+        color: $color-black
+        z-index: 100
+        &:hover
+            cursor pointer
+            scale: 0.97
+        &:active
+            scale: 1
+
+.openNav
+    display: flex
+
+

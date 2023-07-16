@@ -1,0 +1,52 @@
+.section-footer    
+    display: flex
+    @include respond(tablet-portrait)
+        margin-top: -43px
+    @include respond(mobile-landscape)
+        padding-top: 229px
+        margin-bottom: -58px
+    @include respond(mobile-portrait)
+        position: relative
+        margin-bottom: -79px
+        padding-top: 240px
+    &__left-wrap
+        position: relative
+        left: -84px
+        top: -44px
+        height: 239px
+        @include respond(mobile-landscape)
+            position: relative
+            left: 0%
+        @include respond(mobile-portrait)
+            height: 176px
+    &__left-wrap-img
+        filter: drop-shadow(0 4px 4px rgba(0, 0, 0, .25))
+        animation: pulse 2s linear infinite
+        animation-fill-mode: backwards
+        @include respond(tablet-portrait)
+            width: 388px
+            height: 401px
+        @include respond(mobile-landscape)
+            width: 100%
+            height: unset
+        @include respond(mobile-portrait)
+            height: 142px
+    &__right-wrap
+        display: flex
+        flex-direction: column
+        justify-content: center
+        @include respond(tablet-landscape)
+            position: absolute
+            left: 63%
+            top: 20%
+        @include respond(tablet-portrait)
+            position: absolute
+            left: 51%
+            top: 29%
+        @include respond(mobile-landscape)
+            width: 100%
+            position: absolute
+            top: 17%
+            left: 1%
+        @include respond(mobile-portrait)
+            margin: 0 auto

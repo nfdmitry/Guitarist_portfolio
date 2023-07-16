@@ -1,0 +1,39 @@
+.section-main
+    flex: 1 1 auto
+    &__main-block
+        height: 948px
+        background: #FFF url(../img/background-image/header-background.jpg) center/cover no-repeat
+        padding-top: 5px
+
+.background-color-grey-top
+    background-color: $color-background-grey
+    border-radius: 0px 0px 26px 26px
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, .25))
+
+.background-color-grey-bottom
+    background-color: $color-background-grey
+    border-radius: 26px 26px 0px 0px
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, .25))
+
+.section-about
+    display: flex
+    padding: 77px 0px 28px 0px
+    @include respond(mobile-landscape)
+        flex-direction: column
+    @include respond(mobile-portrait)
+        flex-direction: column
+
+.section-presentation
+    margin-bottom: 56px
+    padding-top: 32px
+
+.section-about-training
+    display: flex
+    padding: 46px 0px
+    &__left-wrapper
+        width: 50%
+        display: flex
+        align-items: center
+        justify-content: center
+    &__right-wrapper
+        width: 50%

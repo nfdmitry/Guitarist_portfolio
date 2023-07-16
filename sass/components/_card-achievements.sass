@@ -1,0 +1,90 @@
+.achievements-block
+    display: flex
+    width: 90%
+    margin: 0 auto
+    align-items: center
+    @include respond(tablet-portrait)
+        justify-content: center
+    @include respond(mobile-portrait)
+        flex-direction: column
+
+.left-block
+    display: flex
+    justify-content: space-between
+    width: 50%
+    @include respond(tablet-portrait)
+        flex-direction: column
+        align-items: center
+        width: 40%
+    @include respond(mobile-landscape)
+        width: 100%
+    @include respond(mobile-portrait)
+        width: 70%
+
+.right-block
+    display: flex
+    justify-content: space-between
+    width: 50%
+    @include respond(tablet-portrait)
+        flex-direction: column
+        align-items: center
+        width: 40%
+    @include respond(mobile-landscape)
+        width: 100%
+    @include respond(mobile-portrait)
+        width: 70%
+
+.achievements-card
+    width: 45%
+    display: flex
+    -webkit-box-align: center
+    align-items: center
+    justify-content: center
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25))
+    @include respond(tablet-portrait)
+        width: 80%
+    @include respond(mobile-portrait)
+        width: 66%
+        margin-bottom: 15px
+    &__picture
+        margin-right: 20px
+        filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25))
+        @include respond(tablet-landscape)
+            margin-right: 15px
+            width: 30%
+        @include respond(tablet-portrait)
+            width: 26%
+    &__text
+        @include respond(tablet-portrait)
+            width: 74%
+    &__text-upper
+        font-weight: 600
+        font-size: 43px
+        line-height: 51px
+    &__text-lower
+        font-weight: 400
+        font-size: 18px
+        line-height: 22px
+        @include respond(tablet-landscape)
+            font-size: 16px
+        @include respond(tablet-portrait)
+
+        @include respond(mobile-landscape)
+
+        @include respond(mobile-portrait)
+
+
+.card-one
+    @include respond(mobile-portrait)
+        transform: translate(-59px, 10px)
+
+.card-two
+    @include respond(mobile-portrait)
+        transform: translate(65px, 10px)
+.card-three
+    @include respond(mobile-portrait)
+        transform: translate(-59px, 10px)
+
+.card-four
+    @include respond(mobile-portrait)
+        transform: translate(39px, 10px)

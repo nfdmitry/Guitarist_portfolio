@@ -1,0 +1,173 @@
+.right-wrapper-about
+    width: 372px
+    position: absolute
+    right: 60px
+    top: 274px
+    z-index: 100
+    @include respond(tablet-landscape)
+        width: 372px
+        right: 36px
+        top: 193px
+    @include respond(tablet-portrait)
+        width: 258px
+        right: 36px
+        top: 73px
+    @include respond(mobile-landscape)
+        position: static
+        width: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-bottom: 35px
+    @include respond(mobile-portrait)
+        position: static
+        width: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-bottom: 35px
+
+.left-wrapper-about
+    z-index: 1
+    position: relative
+    @include respond(mobile-landscape)
+        margin: 0px 0px 20px 0px
+        left: 11%
+    @include respond(mobile-portrait)
+        margin: 0px 0px 20px 0px
+        left: 11%
+    &__image
+        width: 100%
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 1.25))
+        @include respond(tablet-landscape)
+            width: 78%
+        @include respond(tablet-portrait)
+            width: 69%
+        @include respond(mobile-portrait)
+            width: 78%
+    &__orange-figure
+        position: absolute
+        width: 60%
+        height: 129%
+        top: -30%
+        right: 35%
+        z-index: -1
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 1.25))
+        @include respond(tablet-landscape)
+            width: 46%
+            height: 129%
+            top: -23%
+            right: 52%
+        @include respond(tablet-portrait)
+            width: 44%
+            height: 113%
+            top: -11%
+            right: 52%
+            z-index: -1
+        @include respond(mobile-landscape)
+            width: 60%
+            height: 129%
+            top: -23%
+            right: 33%
+            z-index: -1
+        @include respond(mobile-portrait)
+            width: 60%
+            height: 129%
+            top: -23%
+            right: 33%
+            z-index: -1
+    &__blue-figure
+        position: absolute
+        width: 49%
+        height: 129%
+        top: -33%
+        right: 45%
+        z-index: -2
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 1.25))
+        @include respond(tablet-landscape)
+            width: 38%
+            height: 111%
+            top: -19%
+            right: 59%
+        @include respond(tablet-portrait)
+            width: 38%
+            height: 113%
+            top: -15%
+            right: 58%
+            z-index: -2
+        @include respond(mobile-landscape)
+            width: 49%
+            height: 129%
+            top: -27%
+            right: 43%
+            z-index: -2
+        @include respond(mobile-portrait)
+            width: 49%
+            height: 129%
+            top: -27%
+            right: 43%
+            z-index: -2
+    &__white-figure
+        position: absolute
+        width: 60%
+        height: 129%
+        top: -25%
+        right: 23%
+        z-index: -3
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 1.25))
+        @include respond(tablet-landscape)
+            width: 52%
+            height: 117%
+            top: -12%
+            right: 46%
+            z-index: -3
+        @include respond(tablet-portrait)
+            width: 53%
+            height: 129%
+            top: -15%
+            right: 42%
+            z-index: -3
+        @include respond(mobile-landscape)
+            width: 60%
+            height: 129%
+            top: -14%
+            right: 24%
+            z-index: -3
+        @include respond(mobile-portrait)
+            width: 60%
+            height: 129%
+            top: -14%
+            right: 24%
+            z-index: -3
+
+.desription-info-text
+    font-size: 16px
+    line-height: 20px
+    margin-bottom: 20px
+    @include respond(tablet-portrait)
+        text-align: center
+    @include respond(mobile-landscape)
+        text-align: center
+    @include respond(mobile-portrait)
+        text-align: center
+
+.section-about-training
+    @include respond(mobile-portrait)
+        display: flex
+        flex-direction: column
+    &__left-wrapper
+        @include respond(mobile-portrait)
+            width: 100%
+
+.training-right-wrap
+    @include respond(mobile-portrait)
+        width: 100%
+    &__text
+        margin-bottom: 30px
+        font-size: 16px
+        line-height: 23px
+
+
+
+
+

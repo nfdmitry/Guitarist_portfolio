@@ -1,0 +1,147 @@
+.title
+    font-family: 'Montserrat'
+    font-style: normal
+    font-weight: 600
+    font-size: 48px
+    line-height: 79px
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+    @include respond(mobile-landscape)
+        font-size: 38px
+        line-height: 34px
+    @include respond(mobile-portrait)
+        font-size: 38px
+        line-height: 34px
+
+.title-section-about
+    font-size: 72px
+    line-height: 68px
+    margin-bottom: 5px
+    @include respond(tablet-landscape)
+        font-size: 51px
+        line-height: 50px
+    @include respond(tablet-portrait)
+        text-align: center
+        line-height: 66px
+    &::after
+        content: ""
+        border-bottom: 1px solid $color-black
+        width: 49px
+        display: flex
+        @include respond(tablet-landscape)
+            width: 36px
+        @include respond(tablet-portrait)
+            width: 34px
+            margin: -10px 0 0 5px
+        @include respond(mobile-landscape)
+            width: 39px
+            margin: 8px 0px 0px 0px
+        @include respond(mobile-portrait)
+            width: 39px
+            margin: 8px 0px 0px 0px
+    @include respond(mobile-landscape)
+        margin-bottom: 25px
+        font-size: 54px
+    @include respond(mobile-portrait)
+        margin-bottom: 25px
+        font-size: 54px
+
+.title-section-presentation
+    font-family: 'Montserrat'
+    font-style: normal
+    font-weight: 600
+    font-size: 43px
+    line-height: 40px
+    margin-bottom: 40px
+    @include respond(mobile-landscape)
+        margin-bottom: 31px
+        padding-left: 20px
+    @include respond(mobile-portrait)
+        margin-bottom: 31px
+        padding-left: 20px
+    &::after
+        content: ""
+        border-bottom: 1px solid $color-black
+        width: 34px
+        display: flex
+        @include respond(mobile-landscape)
+            width: 35px
+        @include respond(mobile-landscape)
+            width: 31px
+        @include respond(mobile-portrait)
+            width: 31px
+
+.training-title-right
+    margin-bottom: 30px
+    line-height: 45px
+    @include respond(mobile-portrait)
+        width: 320px
+        margin: 0px auto 25px auto
+        text-align: center
+    &::after
+        content: ""
+        border-bottom: 1px solid $color-black
+        width: 31px
+        display: flex
+        @include respond(tablet-landscape)
+            font-size: 43px
+            position: absolute
+            top: 44px
+        @include respond(tablet-portrait)
+            font-size: 43px
+            position: absolute
+            top: 44px
+        @include respond(mobile-landscape)
+            width: 24px
+            position: absolute
+            top: 35px
+        @include respond(mobile-portrait)
+            width: 26px
+            position: absolute
+            left: 76px
+
+.training-title-left
+    line-height: 41px
+    @include respond(mobile-portrait)
+        margin-bottom: 42px
+    &::after
+        content: ""
+        border-bottom: 1px solid $color-black
+        width: 43px
+        display: flex
+        @include respond(tablet-landscape)
+            font-size: 43px
+        @include respond(tablet-portrait)
+            font-size: 43px
+        @include respond(mobile-landscape)
+            width: 36px
+        @include respond(mobile-portrait)
+            width: 36px
+
+.section-footer-title
+    line-height: 49px
+    width: 100%
+    margin-bottom: 20px
+    @include respond(tablet-landscape)
+        font-size: 37px
+        line-height: 40px
+    @include respond(mobile-landscape)
+        font-size: 35px
+    @include respond(mobile-portrait)
+        font-size: 18px
+        line-height: 46px
+        display: flex
+        justify-content: center
+    &::after
+        content: ""
+        border-bottom: 1px solid #000
+        display: flex
+        width: 31px
+        position: absolute
+        top: 46px
+        @include respond(tablet-landscape)
+            width: 24px
+            top: 39px
+        @include respond(mobile-landscape)
+            width: 22px
+        @include respond(mobile-portrait)
+            display: none

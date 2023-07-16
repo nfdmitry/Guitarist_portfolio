@@ -1,0 +1,89 @@
+.btn-block
+    display: flex
+    justify-content: space-between
+    @include respond(tablet-portrait)
+        display: flex
+        flex-direction: column
+        align-items: center
+    @include respond(mobile-landscape)
+        flex-direction: column
+        align-items: center
+        margin: 0px 0px 20px 0px
+    @include respond(mobile-portrait)
+        flex-direction: column
+        align-items: center
+        margin: 0px 0px 20px 0px
+
+.btn-buy-lesson
+    display: flex
+    width: 200px
+    height: 60px
+    background-color: $color-orange
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%)
+    border-radius: 100px
+    transition: .3s all
+    &__text
+        color: #FFFFFF
+        font-weight: 600
+        font-size: 18px
+        line-height: 105.19%
+        display: flex
+        justify-content: center
+        align-items: center
+        text-align: center
+        filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25))
+    &:hover
+        cursor: pointer
+        scale: 1.03
+    &:active
+        scale: 1
+    @include respond(tablet-landscape)
+        margin-bottom: 20px
+    @include respond(mobile-landscape)
+        margin: 0px 0px 30px 0px
+    @include respond(mobile-portrait)
+        margin: 0px 0px 30px 0px
+
+.btn-any-questions
+    z-index: 100
+    display: flex
+    align-items: center
+    transition: .3s all
+    width: 140px
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25))
+    &__icon
+        width: 46px
+        height: 46px
+        margin-right: 12px
+    &__text
+        font-size: 16px
+        line-height: 105.19%
+        color: $color-black
+    &:hover
+        cursor: pointer
+        scale: 1.03
+    &:active
+        scale: 1
+
+.btn-block-section-about-training
+    display: flex
+    justify-content: space-evenly
+    z-index: 100
+    @include respond(tablet-portrait)
+        display: flex
+        flex-direction: column
+        align-items: center
+    @include respond(mobile-landscape)
+        flex-direction: column
+        align-items: center
+        margin: 0px 0 -43px 0
+    @include respond(mobile-portrait)
+        flex-direction: column
+        align-items: center
+        margin: 0 0 -54px 0
+
+
+
+
+
+

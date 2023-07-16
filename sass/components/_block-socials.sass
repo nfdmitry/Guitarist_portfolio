@@ -1,0 +1,46 @@
+.block-socials
+    margin-bottom: 9px
+    @include respond(tablet-portrait)
+        text-align: center
+    &__icon
+        width: 40px
+        height: 40px
+        margin-right: 17px
+        transition: .2s all
+        filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 6.25))
+        &:hover
+            cursor: pointer
+            scale: 1.03
+        &:active
+            scale: 1
+        &:last-child
+            margin-right: 0px
+    @include respond(mobile-landscape)
+        margin-bottom: 20px
+    @include respond(mobile-portrait)
+        margin-bottom: 20px
+
+.block-socials-section-footer
+    text-align: left
+    @include respond(mobile-landscape)
+        text-align: center
+    @include respond(tablet-portrait)
+        text-align: center
+    &__icon
+        width: 40px
+        height: 40px
+        margin-right: 22px
+        transition: .2s all
+        filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 6.25))
+        &:hover
+            cursor: pointer
+            scale: 1.03
+        &:active
+            scale: 1
+        &:last-child
+            margin-right: 0px
+    @include respond(mobile-landscape)
+        margin-bottom: 20px
+    @include respond(mobile-portrait)
+        margin-bottom: 20px
+

@@ -2,5 +2,5 @@
 
 Adaptive and mobile layout
 
-## [Demo](https://nfdmitry.github.io/Guitarist-portfolio/)
+## [Demo](https://nda17.github.io/Guitarist-portfolio/)
 
